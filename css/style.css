@@ -9,42 +9,23 @@ html, body {
     background-color:#f4f4f4;
   }
 
-  img {
-    height: 350px;
-    
-  }
-
-#containerPrincipal{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top:20px;
+  .card-posicao-imagem{
+    object-fit: cover;
+    height: 200px;
 }
 
-.col-md-4{
-    min-width: 350px;
-    padding-bottom: 30px;
-    
-}
+.card-largura{
+    max-width: 18rem;
+   }
 
-/* .container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
-    
-    
-} */
- 
+
 .card-body{
-    
-    height: 150px;
-    max-height: 150px;
     background-color: #ffffff;
-    
-    
+    min-height: 150px;
+    max-height: 150px;
 }
+
+
 
 header{
     font-family: 'Lobster', cursive;
@@ -56,20 +37,9 @@ header{
 
 footer{
 
-    background: rgb(5,44,112);
-    background: linear-gradient(90deg, rgba(5,44,112,1) 21%, rgba(63,147,217,1) 33%, rgba(146,206,230,1) 59%, rgba(252,254,255,1) 84%);
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-size: 1.5em;
-    height: 70px;
-
 }
 
-
-@media (max-width:1100px) {
-    .container {
-      flex-direction: column;
-      flex-wrap: nowrap;
-    }
-    
-        }
+a{
+    color:#212529;
+}
