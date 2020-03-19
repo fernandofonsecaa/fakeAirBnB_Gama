@@ -16,10 +16,10 @@ xhr.addEventListener("load", function(){
         // divContainer.className = 'container'
 
         card = document.createElement('div')
-        card.className = 'col-md-4'
+        card.className = 'card col-12 col-md-4 p-0 m-1 card-largura'
 
         image = document.createElement('img')
-        image.className='card-img-top'
+        image.className='card-img-top card-posicao-imagem'
         image.src = (element.photo)
 
         cardBody = document.createElement('div')
@@ -28,7 +28,7 @@ xhr.addEventListener("load", function(){
         // cardText = document.createElement('div')
         // cardText.className = 'card-text'
 
-        propertyType = document.createElement('h5')
+        propertyType = document.createElement('p')
         propertyType.className = 'card-title'
         propertyType.innerHTML = (element.property_type)
 
@@ -41,7 +41,7 @@ xhr.addEventListener("load", function(){
         propertyPrice.innerHTML = (`<strong>R$ ${element.price}</strong>/noite`)  
 
 
-        containerPrincipal.appendChild(card)
+        row.appendChild(card)
         // divContainer.appendChild(card)
         card.appendChild(image)
         card.appendChild(cardBody)
